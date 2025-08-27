@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="p-6">
+      <div className="">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/grado1" element={<Grado1 />} />
