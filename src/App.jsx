@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar.jsx";
+import Navbar from "./components/Navbar.jsx";
 import Inicio from "./pages/Inicio.jsx";
 import Grado1 from "./pages/Grado1.jsx";
 import Grado2 from "./pages/Grado2.jsx";
