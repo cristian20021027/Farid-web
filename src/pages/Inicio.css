@@ -1,0 +1,356 @@
+/* Estilos para la página de inicio de Informática para Niños */
+
+.inicio-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #333;
+}
+
+/* Header principal */
+.inicio-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-principal {
+  font-size: 3rem;
+  margin: 0;
+  background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #96CEB4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rainbow 3s ease-in-out infinite;
+}
+
+.emoji {
+  display: inline-block;
+  animation: bounce 2s infinite;
+  margin: 0 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  color: #666;
+  margin: 1rem 0 0 0;
+  font-weight: 600;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+  text-align: center;
+  padding: 2rem;
+  margin: 0 1rem 2rem 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.bienvenida h2 {
+  color: #FF6B6B;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bienvenida p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Sección de grados */
+.grados-section {
+  padding: 2rem 1rem;
+}
+
+.grados-titulo {
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.grados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.grado-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 4px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.grado-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--card-color);
+}
+
+.grado-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: var(--card-color);
+}
+
+.grado-icono {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.grado-titulo {
+  font-size: 1.8rem;
+  color: var(--card-color);
+  text-align: center;
+  margin: 0 0 1rem 0;
+  font-weight: bold;
+}
+
+.grado-descripcion {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.grado-temas h4 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.grado-temas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.grado-temas li {
+  padding: 0.3rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.grado-boton {
+  background: var(--card-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.grado-card:hover .grado-boton {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de características */
+.caracteristicas {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.caracteristicas h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.caracteristicas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.caracteristica {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.caracteristica:hover {
+  transform: translateY(-5px);
+}
+
+.caracteristica-icono {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: pulse 2s infinite;
+}
+
+.caracteristica h3 {
+  color: #FF6B6B;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.caracteristica p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Footer */
+.inicio-footer {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  margin: 2rem 1rem 0 1rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.inicio-footer p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-emojis {
+  font-size: 2rem;
+  animation: wave 2s infinite;
+}
+
+/* Animaciones */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rainbow {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(180deg);
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+  .titulo-principal {
+    font-size: 2rem;
+  }
+  
+  .subtitulo {
+    font-size: 1.1rem;
+  }
+  
+  .bienvenida h2 {
+    font-size: 1.5rem;
+  }
+  
+  .grados-titulo,
+  .caracteristicas h2 {
+    font-size: 2rem;
+  }
+  
+  .grados-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .caracteristicas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .grado-card {
+    padding: 1.5rem;
+  }
+  
+  .caracteristica {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inicio-header {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .bienvenida,
+  .grados-section,
+  .caracteristicas {
+    padding: 1.5rem 0.5rem;
+  }
+  
+  .grados-grid,
+  .caracteristicas-grid {
+    padding: 0 0.5rem;
+  }
+}
